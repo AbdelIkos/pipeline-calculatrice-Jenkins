@@ -49,7 +49,7 @@ pipeline {
         stage('Branch') {
             agent any
             steps {
-                echo 'main'
+                echo 'new branch'
             }  
         }
     }
