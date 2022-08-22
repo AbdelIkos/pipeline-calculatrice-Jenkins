@@ -47,7 +47,10 @@ pipeline {
             }
         }
         stage('Branche') {
-            sh "echo new_Branch"
+            egnet any
+            step {
+            echo "new_Branch"
+            }
         }
     }
 }
