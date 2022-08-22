@@ -42,9 +42,12 @@ pipeline {
             post {
                 success {
                     archiveArtifacts "${env.BUILD_ID}/sources/dist/prog"
-                    sh "rm -rf ${env.BUILD_ID}/sources/build ${env.BUILD_ID}/sources/dist"
+                    //sh "rm -rf ${env.BUILD_ID}/sources/build ${env.BUILD_ID}/sources/dist"
                 }
             }
+        }
+        stage('Branche') {
+            sh "echo new_Branch"
         }
     }
 }
