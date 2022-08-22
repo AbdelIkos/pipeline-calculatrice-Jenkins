@@ -46,11 +46,11 @@ pipeline {
                 }
             }
         }
-        stage('Branche') {
-            egnet any
-            step {
-            echo "new_Branch"
-            }
+        stage('Branch') {
+            agent any
+            steps {
+                echo 'nom-de-la-branche'
+            }  
         }
     }
 }
